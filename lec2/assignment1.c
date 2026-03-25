@@ -115,7 +115,7 @@ int ai_vs_ai(const Player *a, const Player *b, const char *round) {
 
     /* a->name: 포인터 a가 가리키는 구조체의 name 필드에 접근 */
     /* (*a).name 과 동일한 표현이지만, -> 연산자가 더 간결함 */
-    printf("  [AI 경기] %s vs %s\n", a->name, b->name);
+    printf("  [AI 경기 - %s] %s vs %s\n",round, a->name, b->name);
 
     /*
      * while (1): 무한 반복. 비기면 재경기를 해야 하므로 무한 루프를 쓰고,
